@@ -1,7 +1,7 @@
 # KMITL-WebApplication-Development-Projects-2D
 
 <h3>JoinTy</h3>
-
+<img src="./JoinTy/img/logo1.png" />
 <p>a Project that required using only HTML, CSS and JavaScript based on MVC Pattern on ASP.NET Core MVC.</P>
 
 <div style="display:flex-wrap; margin-bottom:10px; ">
