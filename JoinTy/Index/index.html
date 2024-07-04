@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>JoinTy</title>
+</head>
+
+<body>
+    <ul class="nav-links">
+        <li><a href="#"><img class="logo filter" src="../img/logo1.png" alt="logo"></a></li>
+        <!-- <li><a href="#" class="filter" style="color: #f88484;">เกี่ยวกับ</a></li>
+        <li class="filter"><a href="#" style="color: #9CDBC8;">จัดอันดับ</a></li>
+        <li class="filter"><a href="#" style="color: #84A7F6;">บริการ</a></li>
+        <li class="filter"><a href="#" style="color: #F6CC84;">รายงาน</a></li> -->
+        <div class="profile-container">
+            <a class="simongame profilenav" href="../Simon Game Challenge Starting Files/index.html"><img
+                    src="../Simon Game Challenge Starting Files/images/pic.png"></a>
+            <a class="drumgame profilenav" href="../Drum Kit Starting Files/drumgame.html"><img
+                    src="../Drum Kit Starting Files/images/tom1.png"></a>
+            <a class="noti profilenav" href="#"><img src="../img/noti.png"></a>
+            <!-- Example notification menu -->
+            <div id="notification-menu" class="notification-menu">
+                <!-- Notification data goes here -->
+                    <div class="notidata">
+                        <a href="#" class="delete">x</a>
+                        <div class="cardnotification">
+                            <div class="prompt">New notification!!!</div>
+                            <div class="header">New Party</div>
+                            <div class="data">You got party!!!</div>
+                        </div>                        
+                    </div>
+
+                    <div class="notidata">
+                        <a href="#" class="delete">x</a>
+                        <div class="cardnotification">
+                            <div class="prompt">New notification!!!</div>
+                            <div class="header">New Party</div>
+                            <div class="data">You got party!!!</div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="notidata">
+                        <a href="#" class="delete">x</a>
+                        <div class="cardnotification">
+                            <div class="prompt">New notification!!!</div>
+                            <div class="header">New Party</div>
+                            <div class="data">You got party!!!</div>
+                        </div>
+                        
+                    </div>
+            </div>
+
+            <a class="inbox profilenav" href="../chat/chat.html"><img src="../img/inbox.png"></a>
+            <a class="profilepic profilenav" href="../profile/profile.html"><img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin"
+                    alt="profile"></a>
+        </div>
+
+    </ul>
+
+    <div class="search-container">
+        <form id="search-form">
+            <select name="province" id="province">
+                <option value="">จังหวัด</option>
+                <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                <option value="สมุทรปราการ">สมุทรปราการ</option>
+                <option value="นนทบุรี">นนทบุรี</option>
+                <option value="ปทุมธานี">ปทุมธานี</option>
+                <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา</option>
+                <option value="อ่างทอง">อ่างทอง</option>
+                <option value="ลพบุรี">ลพบุรี</option>
+                <option value="สิงห์บุรี">สิงห์บุรี</option>
+                <option value="ชัยนาท">ชัยนาท</option>
+                <option value="สระบุรี">สระบุรี</option>
+                <option value="ชลบุรี">ชลบุรี</option>
+                <option value="ระยอง">ระยอง</option>
+                <option value="จันทบุรี">จันทบุรี</option>
+                <option value="ตราด">ตราด</option>
+                <option value="ฉะเชิงเทรา">ฉะเชิงเทรา</option>
+                <option value="ปราจีนบุรี">ปราจีนบุรี</option>
+                <option value="นครนายก">นครนายก</option>
+                <option value="สระแก้ว">สระแก้ว</option>
+                <option value="นครราชสีมา">นครราชสีมา</option>
+                <option value="บุรีรัมย์">บุรีรัมย์</option>
+                <option value="สุรินทร์">สุรินทร์</option>
+                <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+                <option value="อุบลราชธานี">อุบลราชธานี</option>
+                <option value="ยโสธร">ยโสธร</option>
+                <option value="ชัยภูมิ">ชัยภูมิ</option>
+                <option value="อำนาจเจริญ">อำนาจเจริญ</option>
+                <option value="บึงกาฬ">บึงกาฬ</option>
+                <option value="หนองบัวลำภู">หนองบัวลำภู</option>
+                <option value="ขอนแก่น">ขอนแก่น</option>
+                <option value="อุดรธานี">อุดรธานี</option>
+                <option value="เลย">เลย</option>
+                <option value="หนองคาย">หนองคาย</option>
+                <option value="มหาสารคาม">มหาสารคาม</option>
+                <option value="ร้อยเอ็ด">ร้อยเอ็ด</option>
+                <option value="กาฬสินธุ์">กาฬสินธุ์</option>
+                <option value="สกลนคร">สกลนคร</option>
+                <option value="นครพนม">นครพนม</option>
+                <option value="มุกดาหาร">มุกดาหาร</option>
+                <option value="เชียงใหม่">เชียงใหม่</option>
+                <option value="ลำพูน">ลำพูน</option>
+                <option value="ลำปาง">ลำปาง</option>
+                <option value="อุตรดิตถ์">อุตรดิตถ์</option>
+                <option value="แพร่">แพร่</option>
+                <option value="น่าน">น่าน</option>
+                <option value="พะเยา">พะเยา</option>
+                <option value="เชียงราย">เชียงราย</option>
+                <option value="แม่ฮ่องสอน">แม่ฮ่องสอน</option>
+                <option value="นครสวรรค์">นครสวรรค์</option>
+                <option value="อุทัยธานี">อุทัยธานี</option>
+                <option value="กำแพงเพชร">กำแพงเพชร</option>
+                <option value="ตาก">ตาก</option>
+                <option value="สุโขทัย">สุโขทัย</option>
+                <option value="พิษณุโลก">พิษณุโลก</option>
+                <option value="พิจิตร">พิจิตร</option>
+                <option value="เพชรบูรณ์">เพชรบูรณ์</option>
+                <option value="ราชบุรี">ราชบุรี</option>
+                <option value="กาญจนบุรี">กาญจนบุรี</option>
+                <option value="สุพรรณบุรี">สุพรรณบุรี</option>
+                <option value="นครปฐม">นครปฐม</option>
+                <option value="สมุทรสาคร">สมุทรสาคร</option>
+                <option value="สมุทรสงคราม">สมุทรสงคราม</option>
+                <option value="เพชรบุรี">เพชรบุรี</option>
+                <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์</option>
+                <option value="นครศรีธรรมราช">นครศรีธรรมราช</option>
+                <option value="กระบี่">กระบี่</option>
+                <option value="พังงา">พังงา</option>
+                <option value="ภูเก็ต">ภูเก็ต</option>
+                <option value="สุราษฎร์ธานี">สุราษฎร์ธานี</option>
+                <option value="ระนอง">ระนอง</option>
+                <option value="ชุมพร">ชุมพร</option>
+                <option value="สงขลา">สงขลา</option>
+                <option value="สตูล">สตูล</option>
+                <option value="ตรัง">ตรัง</option>
+                <option value="พัทลุง">พัทลุง</option>
+                <option value="ปัตตานี">ปัตตานี</option>
+                <option value="ยะลา">ยะลา</option>
+                <option value="นราธิวาส">นราธิวาส</option>
+            </select>
+            <div>
+                <input type="date" name="start-date" id="start-date">
+            </div>
+            <button type="submit">ค้นหา</button>
+        </form>
+    </div>
+
+
+
+    <div class="card-container">
+
+        <div class="card">
+            <div class="explorer">👀 กำลังค้นหาผู้คน</div>
+            <div class="time">วันที่เปิดรับ: 03/03/2024 | วันปิดรับ: 12/03/2024 </div>
+            <div class="time" style="color:#84A7F6 ;">เวลาคงเหลือ: 9 วัน</div>
+            <div class="name">Room A Party</div>
+            <div class="location">KMITL, Ladkrabang Bangkok</div>
+            <div class="description-container">
+                <div class="description">Let's go party after the hard works. Please feel free for coming. The food and drinks is Free!</div>
+                <img class="description-img"
+                    src="https://engineer.kmitl.ac.th/wp-content/uploads/2022/07/1-4-1024x859.jpg">
+            </div>
+            <div class="additional-info">
+                <a class="linker" href="#">
+                    <div class="joined-user">
+                        <p>เจ้าของประกาศ</p>
+                        <img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin" alt="profile">
+                        <div class="joined-user-name">Surin</div>
+                    </div>
+                </a>
+                <div class="details">
+                    <p class="details-title">ℹ️ ข้อมูลเพิ่มเติม</p>
+                    
+
+                    <p class="users"> มีคนเข้าร่วม 3/20 คน</p>
+                    <div class="joined-user-container">
+
+                        <a href="#">
+                            <div class="joined-user">
+                                <img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin" alt="profile">
+                                <div class="joined-user-name">Surin</div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="joined-user">
+                                <img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin" alt="profile">
+                                <div class="joined-user-name">Surin</div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="joined-user">
+                                <img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin" alt="profile">
+                                <div class="joined-user-name">Surin</div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="joined-user">
+                                <img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin" alt="profile">
+                                <div class="joined-user-name">Surin</div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="button-container" id="cardbtn">
+                <button class="card-button-green" onclick="showModal()">เข้าร่วม</button>
+
+                <!-- The Modal -->
+                <button class="card-button-yellow" onclick="expandCard(this)">ข้อมูลเพิ่มเติม</button>
+
+                <button class="card-button-red" onclick="editModal(this)">เเก้ไข</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="explorer">👀 กำลังค้นหาผู้คน</div>
+            <div class="time">วันที่เปิดรับ: 03/03/2024 | วันปิดรับ: 12/03/2024 </div>
+            <div class="time" style="color:#84A7F6 ;" >เวลาคงเหลือ: 9 วัน</div>
+            <div class="name">มาเอนจอยกันเถอะ วัยรุ่นทำงาน!</div>
+            <div class="location">Status Ratchayothin, Ladprao Bangkok</div>
+            <div class="description-container">
+                <div class="description">มีโต๊ะเเน่นอนเเล้วนะครับ มาได้ตั้งเเต่ 18:00 ส่วนตอนกลับ อยากให้กลับได้พร้อมกันน๊า</div>
+                <img class="description-img"
+                    src="https://scontent.fbkk22-1.fna.fbcdn.net/v/t39.30808-6/443842121_1005653254249684_555919168762820564_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHOV7zbDUlmn1JfOHxG8yCZyTSGCVIU7NvJNIYJUhTs2xwUTVgu8vtNsx3xBvUw5YV7mUtX66EnbZGzmKXdD4Pp&_nc_ohc=n_uyKaD19zAQ7kNvgFtEvdJ&_nc_zt=23&_nc_ht=scontent.fbkk22-1.fna&oh=00_AYC1f-Fhq3ba48TfozMIk7-DM3UExPwow6ByMYjZFDBqbQ&oe=668BFF7C">
+            </div>
+            <div class="additional-info">
+                <a class="linker" href="#">
+                    <div class="joined-user">
+                        <p>เจ้าของประกาศ</p>
+                        <img src="https://scontent.fbkk22-7.fna.fbcdn.net/v/t39.30808-1/449301528_1908697696260264_3424950615219691735_n.jpg?stp=dst-jpg_p160x160&_nc_cat=107&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeG_VJA0FyB70owdG3EVJ6LrHPWIB-YNwmkc9YgH5g3CaUkVpJfVchB5M8rk52A3q-sm7N6jci3CjIIWFKVIrPyT&_nc_ohc=XXy-IEs31gMQ7kNvgEx5OWG&_nc_ht=scontent.fbkk22-7.fna&oh=00_AYC8wKR5PZuesN0HYr4FExamuQG9IH1rpjDuni5fhyy4Ew&oe=668BFFD9" alt="profile">
+                        <div class="joined-user-name">Choll</div>
+                    </div>
+                </a>
+                <div class="details">
+                    <p class="details-title">ℹ️ ข้อมูลเพิ่มเติม</p>
+                    
+
+                    <p class="users"> มีคนเข้าร่วม 4/20 คน</p>
+                    <div class="joined-user-container">
+
+                        <a href="#">
+                            <div class="joined-user">
+                                <img src="https://scontent.fbkk22-1.fna.fbcdn.net/v/t39.30808-1/401847541_1492648727976160_3925010823749418484_n.jpg?stp=dst-jpg_p200x200&_nc_cat=101&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeEi5fK9KBerinWliWrwdGl9BRzMF0M8IhUFHMwXQzwiFfy9FUUFV2XohBRh6pp-9x_1pHCeG7KnPDML91tY1DkT&_nc_ohc=ib9RG5eEkWkQ7kNvgE0ykAt&_nc_ht=scontent.fbkk22-1.fna&oh=00_AYAOsZRb0StscCOxjjKXgag6_oJ1XGAU3Uywbcnd4hxD7w&oe=668C00AC" alt="profile">
+                                <div class="joined-user-name">Blue</div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="joined-user">
+                                <img src="https://scontent.fbkk22-4.fna.fbcdn.net/v/t39.30808-1/449663459_3603191489997035_477646686418589292_n.jpg?stp=dst-jpg_p200x200&_nc_cat=109&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeEMlcqnp6_wigXkCXJlM4ITWGBT1tkm54pYYFPW2SbniupXC3m0UBj_m_4eTXuWH8tnjbwTyt7J8qHBfH4D6_OJ&_nc_ohc=b-z6QnlcVjUQ7kNvgEFZui1&_nc_ht=scontent.fbkk22-4.fna&oh=00_AYCzZapwm_SyC9fZXHlGu7xrJlugYprYMHlol8gMKmh5wA&oe=668BFE24" alt="profile">
+                                <div class="joined-user-name">นายถล่ม</div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="joined-user">
+                                <img src="https://scontent.fbkk22-3.fna.fbcdn.net/v/t39.30808-6/320638780_1194149611211528_6331848456637020179_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFPy3X4g-rFdmSM3qoljQPnHeBAuJBUa-8d4EC4kFRr73m4gFssiKFl_JLg9FLNNBtHjgCsdDB50Gvsgip1iWH0&_nc_ohc=re1M0g70hs4Q7kNvgH5ZIwN&_nc_zt=23&_nc_ht=scontent.fbkk22-3.fna&oh=00_AYDfRLIoPbWsxLZsjPj0bYrPUqrEb2wU66SzmWtUh3uPzA&oe=668C0C2F" alt="profile">
+                                <div class="joined-user-name">TungKungZa</div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="joined-user">
+                                <img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin" alt="profile">
+                                <div class="joined-user-name">Surin</div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="button-container" id="cardbtn">
+                <button class="card-button-green" onclick="showModal()">เข้าร่วม</button>
+
+                <!-- The Modal -->
+                <button class="card-button-yellow" onclick="expandCard(this)">ข้อมูลเพิ่มเติม</button>
+
+                <button class="card-button-red" onclick="editModal(this)">เเก้ไข</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="explorer">👀 กำลังค้นหาผู้คน</div>
+            <div class="time">วันที่เปิดรับ: 03/03/2024 | วันปิดรับ: 12/03/2024 </div>
+            <div class="time" style="color:#84A7F6 ;" >เวลาคงเหลือ: 9 วัน</div>
+            <div class="name">คำต้องห้าม บอร์ดเกม!</div>
+            <div class="location">ESL Cafe, Sirom Bangkok</div>
+            <div class="description-container">
+                <div class="description">พึ่งจัดบอร์ดเกมคำต้องห้ามมาใหม่ อยากได้เพื่อนมาเล่นเยอะๆเลยครับ ใครว่างก็มาได้เลย ผมอยู่ทั้งคืน</div>
+                <img class="description-img"
+                    src="https://scontent.fbkk22-8.fna.fbcdn.net/v/t39.30808-6/411370699_912563653564480_3310293240495749514_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGDTxwwfkaMhrrvX8U1bmLo_HL7gDkZ9G78cvuAORn0bvnZ4DCmqPXNM46J4dOfNipWSEm1zzRAlKYI6k2QdKfO&_nc_ohc=1Gsv71r5CYEQ7kNvgE4njhf&_nc_zt=23&_nc_ht=scontent.fbkk22-8.fna&gid=AoTkbE2HRevA6lmUNrwOKW_&oh=00_AYAUJ9U8w7J0j02C9DsAif2eYBh0jaQiwGwAV_H03Opmpg&oe=668C09EE">
+            </div>
+            <div class="additional-info">
+                <a class="linker" href="#">
+                    <div class="joined-user">
+                        <p>เจ้าของประกาศ</p>
+                        <img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin" alt="profile">
+                        <div class="joined-user-name">Surin</div>
+                    </div>
+                </a>
+                <div class="details">
+                    <p class="details-title">ℹ️ ข้อมูลเพิ่มเติม</p>
+                    
+
+                    <p class="users"> มีคนเข้าร่วม 3/20 คน</p>
+                    <div class="joined-user-container">
+
+                        <a href="#">
+                            <div class="joined-user">
+                                <img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin" alt="profile">
+                                <div class="joined-user-name">Surin</div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="joined-user">
+                                <img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin" alt="profile">
+                                <div class="joined-user-name">Surin</div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="joined-user">
+                                <img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin" alt="profile">
+                                <div class="joined-user-name">Surin</div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="joined-user">
+                                <img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin" alt="profile">
+                                <div class="joined-user-name">Surin</div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="button-container" id="cardbtn">
+                <button class="card-button-green" onclick="showModal()">เข้าร่วม</button>
+
+                <!-- The Modal -->
+                <button class="card-button-yellow" onclick="expandCard(this)">ข้อมูลเพิ่มเติม</button>
+
+                <button class="card-button-red" onclick="editModal(this)">เเก้ไข</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="explorer">👀 กำลังค้นหาผู้คน</div>
+            <div class="time">วันที่เปิดรับ: 03/03/2024 | วันปิดรับ: 12/03/2024 </div>
+            <div class="time" style="color:#84A7F6 ;" >เวลาคงเหลือ: 9 วัน</div>
+            <div class="name">มาเตะฟุตบอล เพื่อสุขภาพกัน!</div>
+            <div class="location">Next Stadium, Ladprao Bangkok</div>
+            <div class="description-container">
+                <div class="description">จองไว้เเล้วนะครับ เวลา 18:00 - 20:00 มาถึงเเล้วก็ เเจ้งมาได้เลยนะครับ เน้นสุขภาพ ไม่เน้นหมัดมวย</div>
+                <img class="description-img"
+                    src="https://scontent.fbkk22-3.fna.fbcdn.net/v/t39.30808-6/425957007_380292841412166_5305565976584111829_n.jpg?stp=dst-jpg_p600x600&_nc_cat=103&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeE58AmEDDSjmb5G2H0dKu_zYQDtB44jOoZhAO0HjiM6hgsI17tZgsQqGR0E0VheWmEupYVduCcY0U9g-M_PlmVa&_nc_ohc=zgdmucHUeisQ7kNvgHRuw-k&_nc_zt=23&_nc_ht=scontent.fbkk22-3.fna&oh=00_AYD4fKWJuDPXaovjboC0CULj22q_-ymMlhQWk5H0r6qNpw&oe=668BF710">
+            </div>
+            <div class="additional-info">
+                <a class="linker" href="#">
+                    <div class="joined-user">
+                        <p>เจ้าของประกาศ</p>
+                        <img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin" alt="profile">
+                        <div class="joined-user-name">Surin</div>
+                    </div>
+                </a>
+                <div class="details">
+                    <p class="details-title">ℹ️ ข้อมูลเพิ่มเติม</p>
+                    
+
+                    <p class="users"> มีคนเข้าร่วม 3/20 คน</p>
+                    <div class="joined-user-container">
+
+                        <a href="#">
+                            <div class="joined-user">
+                                <img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin" alt="profile">
+                                <div class="joined-user-name">Surin</div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="joined-user">
+                                <img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin" alt="profile">
+                                <div class="joined-user-name">Surin</div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="joined-user">
+                                <img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin" alt="profile">
+                                <div class="joined-user-name">Surin</div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="joined-user">
+                                <img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin" alt="profile">
+                                <div class="joined-user-name">Surin</div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="button-container" id="cardbtn">
+                <button class="card-button-green" onclick="showModal()">เข้าร่วม</button>
+
+                <!-- The Modal -->
+                <button class="card-button-yellow" onclick="expandCard(this)">ข้อมูลเพิ่มเติม</button>
+
+                <button class="card-button-red" onclick="editModal(this)">เเก้ไข</button>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+    <a href="../create/create.html" class="button">󠀫󠀫<span class="buttontext plus">+</span><span
+            class="buttontext">สร้าง</span>ปาร์ตี้ใหม่</a>
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="https://i.gifer.com/7efs.gif" alt="Joined successfully">
+            <p>เข้าร่วมสำเร็จ!</p>
+        </div>
+    </div>
+
+    <div id="editModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>เเก้ไขโพส</p>
+            <form action="" class="edit">
+                <input type="text" name="name" id="name" class="input" placeholder="ชื่อปาร์ตี้">
+                <input type="text" name="location" id="location" class="input" placeholder="สถานที่">
+                <input type="text" name="description" id="description" class="input" placeholder="รายละเอียด">
+                <input type="text" name="img" id="img" class="input" placeholder="Link รูปภาพ">
+                <input type="text" name="img" id="img" class="input" placeholder="Link รูปภาพ">
+                <input type="text" name="img" id="img" class="input" placeholder="Link รูปภาพ">
+                <input type="number" name="max" class="input" id="max" min="1" max="30" placeholder="จำกัดผู้เข้าร่วมที่">
+                <p class="enddate">วันสิ้นสุดประกาศ</p>
+                <input type="date" name="end-date" id="end-date">
+                <p class="users"> มีคนเข้าร่วม 4/20 คน</p>
+                <div class="joined-user-container">
+
+                    <a href="#">
+                        <div class="joined-user">
+                            <img src="https://scontent.fbkk22-1.fna.fbcdn.net/v/t39.30808-1/401847541_1492648727976160_3925010823749418484_n.jpg?stp=dst-jpg_p200x200&_nc_cat=101&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeEi5fK9KBerinWliWrwdGl9BRzMF0M8IhUFHMwXQzwiFfy9FUUFV2XohBRh6pp-9x_1pHCeG7KnPDML91tY1DkT&_nc_ohc=ib9RG5eEkWkQ7kNvgE0ykAt&_nc_ht=scontent.fbkk22-1.fna&oh=00_AYAOsZRb0StscCOxjjKXgag6_oJ1XGAU3Uywbcnd4hxD7w&oe=668C00AC" alt="profile">
+                            <div class="joined-user-name">Blue</div>
+                            <button class="inputdelete" onclick="deleteUser(this)">ลบ</button>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="joined-user">
+                            <img src="https://scontent.fbkk22-4.fna.fbcdn.net/v/t39.30808-1/449663459_3603191489997035_477646686418589292_n.jpg?stp=dst-jpg_p200x200&_nc_cat=109&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeEMlcqnp6_wigXkCXJlM4ITWGBT1tkm54pYYFPW2SbniupXC3m0UBj_m_4eTXuWH8tnjbwTyt7J8qHBfH4D6_OJ&_nc_ohc=b-z6QnlcVjUQ7kNvgEFZui1&_nc_ht=scontent.fbkk22-4.fna&oh=00_AYCzZapwm_SyC9fZXHlGu7xrJlugYprYMHlol8gMKmh5wA&oe=668BFE24" alt="profile">
+                            <div class="joined-user-name">นายถล่ม</div>
+                            <button class="inputdelete" onclick="deleteUser(this)">ลบ</button>
+                        </div>
+                        
+                    </a>
+
+                    <a href="#">
+                        <div class="joined-user">
+                            <img src="https://scontent.fbkk22-3.fna.fbcdn.net/v/t39.30808-6/320638780_1194149611211528_6331848456637020179_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFPy3X4g-rFdmSM3qoljQPnHeBAuJBUa-8d4EC4kFRr73m4gFssiKFl_JLg9FLNNBtHjgCsdDB50Gvsgip1iWH0&_nc_ohc=re1M0g70hs4Q7kNvgH5ZIwN&_nc_zt=23&_nc_ht=scontent.fbkk22-3.fna&oh=00_AYDfRLIoPbWsxLZsjPj0bYrPUqrEb2wU66SzmWtUh3uPzA&oe=668C0C2F" alt="profile">
+                            <div class="joined-user-name">TungKungZa</div>
+                            <button class="inputdelete" onclick="deleteUser(this)">ลบ</button>
+                        </div>
+                        
+                    </a>
+
+                    <a href="#">
+                        <div class="joined-user">
+                            <img src="https://www.ce.kmitl.ac.th/api/faculty/download/Surin" alt="profile">
+                            <div class="joined-user-name">Surin</div>
+                            <button class="inputdelete" onclick="deleteUser(this)">ลบ</button>
+                        </div>
+                        
+                    </a>
+
+                <button type="submit " class="except input" onclick="checkFormEmpty()">ยืนยัน</button>
+                <button type="submit" class="inputdelete"  onclick="deleteModal(this)">ลบประกาศ</button>
+                
+
+        </div>
+    </div>
+
+    <div id="editCompleteModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="https://i.gifer.com/7efs.gif" alt="Joined successfully">
+            <p>เเก้ไขสำเร็จ!</p>
+        </div>
+    </div>
+
+    <div id="deleteCompleteModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="https://i.gifer.com/7efs.gif" alt="Joined successfully">
+            <p>ลบสำเร็จ!</p>
+        </div>
+    </div>
+
+    <div id="deleteModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            ยืนยันการลบปาร์ตี้?
+            <button class="except " onclick="deleteCompleteModal(this) ,checkFormEmpty(this)">ยืนยัน</button>
+            <button class="cancle" onclick="cancle(this)">ยกเลิก</button>
+        </div>
+    </div>
+
+    
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
