@@ -28,7 +28,7 @@ Home Page
 <img src="./RefPics/Home4.png" />
 <img src="./RefPics/Home5.png" />
 <hr />
-๋Create Party Form Page
+Create Party Form Page
 <img src="./RefPics/Form1.png" />
 <img src="./RefPics/Form2.png" />
 <img src="./RefPics/Form3.png" />
